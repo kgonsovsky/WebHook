@@ -1,0 +1,12 @@
+C:\Users\Administrator\source\repos\WebHook\Output\TourOperator.Api\appsettings.json\net6.0\TourOperator.Model.deps.json
+C:\Users\Administrator\source\repos\WebHook\Output\TourOperator.Api\appsettings.json\net6.0\TourOperator.Model.dll
+C:\Users\Administrator\source\repos\WebHook\Output\TourOperator.Api\appsettings.json\net6.0\TourOperator.Model.pdb
+C:\Users\Administrator\source\repos\WebHook\Output\obj\TourOperator.Api\appsettings.json\net6.0\TourOperator.Model.csproj.AssemblyReference.cache
+C:\Users\Administrator\source\repos\WebHook\Output\obj\TourOperator.Api\appsettings.json\net6.0\TourOperator.Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\source\repos\WebHook\Output\obj\TourOperator.Api\appsettings.json\net6.0\TourOperator.Model.AssemblyInfoInputs.cache
+C:\Users\Administrator\source\repos\WebHook\Output\obj\TourOperator.Api\appsettings.json\net6.0\TourOperator.Model.AssemblyInfo.cs
+C:\Users\Administrator\source\repos\WebHook\Output\obj\TourOperator.Api\appsettings.json\net6.0\TourOperator.Model.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\source\repos\WebHook\Output\obj\TourOperator.Api\appsettings.json\net6.0\TourOperator.Model.dll
+C:\Users\Administrator\source\repos\WebHook\Output\obj\TourOperator.Api\appsettings.json\net6.0\refint\TourOperator.Model.dll
+C:\Users\Administrator\source\repos\WebHook\Output\obj\TourOperator.Api\appsettings.json\net6.0\TourOperator.Model.pdb
+C:\Users\Administrator\source\repos\WebHook\Output\obj\TourOperator.Api\appsettings.json\net6.0\ref\TourOperator.Model.dll

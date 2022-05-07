@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Administrator\\source\\repos\\WebHook\\TravelAgency\\TravelAgency.csproj",
-      "projectName": "TravelAgency",
-      "projectPath": "C:\\Users\\Administrator\\source\\repos\\WebHook\\TravelAgency\\TravelAgency.csproj",
+      "projectUniqueName": "C:\\Users\\Administrator\\source\\repos\\WebHook\\TravelAgency\\TravelAgency.Web.csproj",
+      "projectName": "TravelAgency.Web",
+      "projectPath": "C:\\Users\\Administrator\\source\\repos\\WebHook\\TravelAgency\\TravelAgency.Web.csproj",
       "packagesPath": "C:\\Users\\Konstantin\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Administrator\\source\\repos\\WebHook\\TravelAgency\\obj\\",
       "projectStyle": "PackageReference",

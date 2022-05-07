@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PQhjMZPkAti+eLu5v6nFHxMnyCBRCDLukBXzFVSb0qvpE40hLVcKCPUdlp5/1oQaUOXUZsEC4WoQrmju+T+7Hg==",
+  "dgSpecHash": "TT0Bpbu39xhxVuPu488p8px1lPz2I8iXp/P3Zl3ZwLPqOAIEyvtjO0R03wiew5pwKZKG49hAeLddyOFZVHd0Rw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Administrator\\source\\repos\\WebHook\\TravelAgency\\TravelAgency.csproj",
+  "projectFilePath": "C:\\Users\\Administrator\\source\\repos\\WebHook\\TravelAgency\\TravelAgency.Web.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

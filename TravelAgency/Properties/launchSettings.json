@@ -1,13 +1,14 @@
 {
   "profiles": {
-    "AspNetWebhookSubscriber": {
+
+    "TravelAgency.Web": {
       "commandName": "Project",
-      "launchBrowser": true,
+      "launchBrowser": false,
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
-      "dotnetRunMessages": "true",
-      "applicationUrl": "http://localhost:5045"
+      "applicationUrl": "http://0.0.0.0:999",
+      "dotnetRunMessages": "true"
     }
   }
 }
