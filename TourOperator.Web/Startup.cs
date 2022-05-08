@@ -37,6 +37,9 @@ public class Startup
         
         app.UseStaticFiles();
 
+        app.UseRouting();
+
+
         app.UseMvc(routes =>
         {
             routes.MapRoute(

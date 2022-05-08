@@ -8,11 +8,6 @@
 	  <BaseIntermediateOutputPath>..\Output\obj</BaseIntermediateOutputPath>
   </PropertyGroup>
 
-	<PropertyGroup>
-	
-		<EnableDefaultContentItems>false</EnableDefaultContentItems>
-	</PropertyGroup>
-
   <ItemGroup>
     <None Include="..\TourOperator.Api\appsettings.Development.json" Link="appsettings.Development.json">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
