@@ -49,8 +49,8 @@ public class GateWayController: ControllerBase
                 Created = DateTime.Now,
                 Id = Guid.NewGuid(),
             };
-            _db.SaveChanges();
             _db.WebhookPayloads.Add(payload);
+            _db.SaveChanges();
             Processor.Enqueue(payload);
         }
         return reservation.Id;

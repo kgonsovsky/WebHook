@@ -103,8 +103,8 @@ public class Processor: BackgroundService
                             Created = DateTime.Now,
                             Id = Guid.NewGuid(),
                         };
-                        db.SaveChanges();
                         db.WebhookPayloads.Add(payload);
+                        await db.SaveChangesAsync(stoppingToken);
                     }
                 }
 
