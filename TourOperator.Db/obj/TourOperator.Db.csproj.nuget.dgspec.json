@@ -13,6 +13,9 @@
         "packagesPath": "C:\\Users\\Konstantin\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Administrator\\source\\repos\\WebHook\\TourOperator.Db\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
           "C:\\Users\\Konstantin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -53,6 +56,12 @@
               "version": "[6.0.4, )"
             },
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[6.0.4, )"
             },
@@ -101,6 +110,9 @@
         "packagesPath": "C:\\Users\\Konstantin\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Administrator\\source\\repos\\WebHook\\TourOperator.Model\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
           "C:\\Users\\Konstantin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"

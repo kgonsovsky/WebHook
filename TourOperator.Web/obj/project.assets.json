@@ -3287,7 +3287,8 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Konstantin\\.nuget\\packages\\": {}
+    "C:\\Users\\Konstantin\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
@@ -3298,6 +3299,9 @@
       "packagesPath": "C:\\Users\\Konstantin\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Administrator\\source\\repos\\WebHook\\TourOperator.Web\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
         "C:\\Users\\Konstantin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
