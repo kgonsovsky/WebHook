@@ -1,8 +1,3 @@
-C:\Users\Administrator\source\repos\WebHook\Output\obj\Debug\net6.0\TourOperator.Api.csproj.AssemblyReference.cache
-C:\Users\Administrator\source\repos\WebHook\Output\obj\Debug\net6.0\TourOperator.Api.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Administrator\source\repos\WebHook\Output\obj\Debug\net6.0\TourOperator.Api.AssemblyInfoInputs.cache
-C:\Users\Administrator\source\repos\WebHook\Output\obj\Debug\net6.0\TourOperator.Api.AssemblyInfo.cs
-C:\Users\Administrator\source\repos\WebHook\Output\obj\Debug\net6.0\TourOperator.Api.csproj.CoreCompileInputs.cache
 C:\Users\Administrator\source\repos\WebHook\Output\Debug\net6.0\appsettings.Development.json
 C:\Users\Administrator\source\repos\WebHook\Output\Debug\net6.0\appsettings.json
 C:\Users\Administrator\source\repos\WebHook\Output\Debug\net6.0\TourOperator.Api.exe
@@ -298,6 +293,11 @@ C:\Users\Administrator\source\repos\WebHook\Output\Debug\net6.0\refs\System.Xml.
 C:\Users\Administrator\source\repos\WebHook\Output\Debug\net6.0\refs\System.Xml.XPath.dll
 C:\Users\Administrator\source\repos\WebHook\Output\Debug\net6.0\refs\System.Xml.XPath.XDocument.dll
 C:\Users\Administrator\source\repos\WebHook\Output\Debug\net6.0\refs\WindowsBase.dll
+C:\Users\Administrator\source\repos\WebHook\Output\obj\Debug\net6.0\TourOperator.Api.csproj.AssemblyReference.cache
+C:\Users\Administrator\source\repos\WebHook\Output\obj\Debug\net6.0\TourOperator.Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\source\repos\WebHook\Output\obj\Debug\net6.0\TourOperator.Api.AssemblyInfoInputs.cache
+C:\Users\Administrator\source\repos\WebHook\Output\obj\Debug\net6.0\TourOperator.Api.AssemblyInfo.cs
+C:\Users\Administrator\source\repos\WebHook\Output\obj\Debug\net6.0\TourOperator.Api.csproj.CoreCompileInputs.cache
 C:\Users\Administrator\source\repos\WebHook\Output\obj\Debug\net6.0\TourOperator.Api.csproj.CopyComplete
 C:\Users\Administrator\source\repos\WebHook\Output\obj\Debug\net6.0\TourOperator.Api.dll
 C:\Users\Administrator\source\repos\WebHook\Output\obj\Debug\net6.0\refint\TourOperator.Api.dll

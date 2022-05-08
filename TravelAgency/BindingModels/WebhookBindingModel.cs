@@ -1,8 +1,7 @@
-﻿namespace TravelAgency.Web.BindingModels
+﻿namespace TravelAgency.Web.BindingModels;
+
+public class WebhookBindingModel
 {
-    public class WebhookBindingModel
-    {
-        public string Data { get; set; }
-        public string Event { get; set; }
-    }
+    public string Data { get; set; }
+    public string Event { get; set; }
 }

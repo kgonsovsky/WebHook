@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "TourOperator.Model": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:51308;http://localhost:51309"
+    }
+  }
+}

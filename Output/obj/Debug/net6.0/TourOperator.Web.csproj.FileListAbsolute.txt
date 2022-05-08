@@ -1,7 +1,3 @@
-C:\Users\Administrator\source\repos\WebHook\Output\Debug\net6.0\obj\project.assets.json
-C:\Users\Administrator\source\repos\WebHook\Output\Debug\net6.0\obj\TourOperator.Web.csproj.nuget.dgspec.json
-C:\Users\Administrator\source\repos\WebHook\Output\Debug\net6.0\appsettings.Development.json
-C:\Users\Administrator\source\repos\WebHook\Output\Debug\net6.0\appsettings.json
 C:\Users\Administrator\source\repos\WebHook\Output\Debug\net6.0\TourOperator.Web.staticwebassets.runtime.json
 C:\Users\Administrator\source\repos\WebHook\Output\Debug\net6.0\TourOperator.Web.exe
 C:\Users\Administrator\source\repos\WebHook\Output\Debug\net6.0\TourOperator.Web.deps.json
@@ -303,8 +299,6 @@ C:\Users\Administrator\source\repos\WebHook\Output\obj\Debug\net6.0\TourOperator
 C:\Users\Administrator\source\repos\WebHook\Output\obj\Debug\net6.0\TourOperator.Web.csproj.CoreCompileInputs.cache
 C:\Users\Administrator\source\repos\WebHook\Output\obj\Debug\net6.0\TourOperator.Web.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Administrator\source\repos\WebHook\Output\obj\Debug\net6.0\TourOperator.Web.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Administrator\source\repos\WebHook\Output\obj\Debug\net6.0\TourOperator.Web.RazorAssemblyInfo.cache
-C:\Users\Administrator\source\repos\WebHook\Output\obj\Debug\net6.0\TourOperator.Web.RazorAssemblyInfo.cs
 C:\Users\Administrator\source\repos\WebHook\Output\obj\Debug\net6.0\staticwebassets.build.json
 C:\Users\Administrator\source\repos\WebHook\Output\obj\Debug\net6.0\staticwebassets.development.json
 C:\Users\Administrator\source\repos\WebHook\Output\obj\Debug\net6.0\scopedcss\bundle\TourOperator.Web.styles.css
@@ -314,5 +308,3 @@ C:\Users\Administrator\source\repos\WebHook\Output\obj\Debug\net6.0\refint\TourO
 C:\Users\Administrator\source\repos\WebHook\Output\obj\Debug\net6.0\TourOperator.Web.pdb
 C:\Users\Administrator\source\repos\WebHook\Output\obj\Debug\net6.0\TourOperator.Web.genruntimeconfig.cache
 C:\Users\Administrator\source\repos\WebHook\Output\obj\Debug\net6.0\ref\TourOperator.Web.dll
-C:\Users\Administrator\source\repos\WebHook\Output\Debug\net6.0\obj\Asp.netCoreMVCCRUD.csproj.nuget.dgspec.json
-C:\Users\Administrator\source\repos\WebHook\Output\Debug\net6.0\obj\TourOperator.Wb.csproj.nuget.dgspec.json

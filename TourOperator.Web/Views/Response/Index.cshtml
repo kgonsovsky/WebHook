@@ -1,0 +1,52 @@
+﻿@model IEnumerable<TourOperator.Model.WebhookResponse>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<table class="table table-hover">
+    <thead>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Created)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.WebhookPayloadId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HttpStatusCode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Data)
+        </th>
+ 
+    </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Created)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.WebhookPayloadId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HttpStatusCode)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Data)
+        </td>
+        <td>
+            <a asp-action="Delete" asp-route-id="@item.Id" class="text-danger ml-1" onclick="return confirm('Are you sure to delete this record?')"><i class="fa fa-trash-alt fa-lg"></i></a>
+        </td>
+    </tr>
+}
+    </tbody>
+</table>

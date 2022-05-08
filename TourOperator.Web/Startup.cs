@@ -1,45 +1,47 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 using TourOperator.Db;
 
-namespace TourOperator.Web
+namespace TourOperator.Web;
+
+public class Startup
 {
-    public class Startup
+    public Startup(IConfiguration configuration)
     {
-        public Startup(IConfiguration configuration)
-        {
-            Configuration = configuration;
-        }
+        Configuration = configuration;
+    }
 
-        public IConfiguration Configuration { get; }
+    public IConfiguration Configuration { get; }
 
-        public void ConfigureServices(IServiceCollection services)
-        {
+    public void ConfigureServices(IServiceCollection services)
+    {
 
-            services.AddMvc(
-                a=> a.EnableEndpointRouting=false).SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+        services.AddMvc(
+            a=> a.EnableEndpointRouting=false).SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
 
-            services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlServer(
-                    Configuration.GetConnectionString("DefaultConnection")));
-        }
+        services.AddDbContext<ApplicationDbContext>(options =>
+            options.UseSqlServer(
+                Configuration.GetConnectionString("DefaultConnection")));
+    }
 
-        public void Configure(IApplicationBuilder app)
-        {
+    public void Configure(IApplicationBuilder app)
+    {
 
-                app.UseDeveloperExceptionPage();
-                app.UseMigrationsEndPoint();
+        app.UseDeveloperExceptionPage();
+        app.UseMigrationsEndPoint();
  
         
-            app.UseStaticFiles();
+        app.UseStaticFiles();
 
-            app.UseMvc(routes =>
-            {
-                routes.MapRoute(
-                    name: "default",
-                    template: "{controller=Subscription}/{action=Index}/{id?}");
-            });
-        }
+        app.UseMvc(routes =>
+        {
+            routes.MapRoute(
+                name: "default",
+                template: "{controller=Subscription}/{action=Index}/{id?}");
+        });
     }
 }

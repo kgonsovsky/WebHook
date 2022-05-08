@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32421.90
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TravelAgency.Web", "TravelAgency\TravelAgency.Web.csproj", "{D6392C6E-A800-4BE2-8F8A-20669223BF84}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TourOperator.Model", "TourOperator.Model\TourOperator.Model.csproj", "{E68B625C-59A7-4712-BF06-A76D78C0D4F0}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TourOperator.Api", "TourOperator.Api\TourOperator.Api.csproj", "{A07A2348-CBCB-40DE-9409-DD0746E3E466}"
@@ -17,7 +15,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{5E1126CE
 		migrate.bat = migrate.bat
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TourOperator.Web", "TourOperator.Web\TourOperator.Web.csproj", "{7B656E15-EBE6-412F-89B4-7D7833AF3B2A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TravelAgency.Web", "TravelAgency\TravelAgency.Web.csproj", "{C7955D8C-984A-4FF7-B3DE-D6733B6B6E64}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TourOperator.Web", "TourOperator.Web\TourOperator.Web.csproj", "{6457F147-986D-41B0-B3D6-91C1FBAD5E33}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,10 +25,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D6392C6E-A800-4BE2-8F8A-20669223BF84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D6392C6E-A800-4BE2-8F8A-20669223BF84}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D6392C6E-A800-4BE2-8F8A-20669223BF84}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D6392C6E-A800-4BE2-8F8A-20669223BF84}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E68B625C-59A7-4712-BF06-A76D78C0D4F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E68B625C-59A7-4712-BF06-A76D78C0D4F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E68B625C-59A7-4712-BF06-A76D78C0D4F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -41,10 +37,14 @@ Global
 		{E8F1E938-37E3-4CDE-A0D1-CEDC5F87F7F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E8F1E938-37E3-4CDE-A0D1-CEDC5F87F7F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E8F1E938-37E3-4CDE-A0D1-CEDC5F87F7F5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7B656E15-EBE6-412F-89B4-7D7833AF3B2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7B656E15-EBE6-412F-89B4-7D7833AF3B2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7B656E15-EBE6-412F-89B4-7D7833AF3B2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7B656E15-EBE6-412F-89B4-7D7833AF3B2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7955D8C-984A-4FF7-B3DE-D6733B6B6E64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7955D8C-984A-4FF7-B3DE-D6733B6B6E64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7955D8C-984A-4FF7-B3DE-D6733B6B6E64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7955D8C-984A-4FF7-B3DE-D6733B6B6E64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6457F147-986D-41B0-B3D6-91C1FBAD5E33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6457F147-986D-41B0-B3D6-91C1FBAD5E33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6457F147-986D-41B0-B3D6-91C1FBAD5E33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6457F147-986D-41B0-B3D6-91C1FBAD5E33}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

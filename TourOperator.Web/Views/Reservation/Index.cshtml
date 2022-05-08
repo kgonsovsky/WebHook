@@ -1,0 +1,67 @@
+﻿@model IEnumerable<TourOperator.Model.Reservation>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<table class="table table-hover">
+    <thead>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Created)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CheckIn)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CheckOut)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Guest)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Agency)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Handled)
+        </th>
+        <th>
+            <a asp-action="AddOrEdit" class="btn btn-outline-success"><i class="far fa-plus-square"></i>Reservation</a>
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Created)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CheckIn)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CheckOut)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Guest)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Agency)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Handled)
+        </td>
+        <td>
+            <a asp-action="AddOrEdit" asp-route-id="@item.Id"><i class="fa fa-marker fa-lg"></i></a>
+            <a asp-action="Delete" asp-route-id="@item.Id" class="text-danger ml-1" onclick="return confirm('Are you sure to delete this record?')"><i class="fa fa-trash-alt fa-lg"></i></a>
+        </td>
+    </tr>
+}
+    </tbody>
+</table>
