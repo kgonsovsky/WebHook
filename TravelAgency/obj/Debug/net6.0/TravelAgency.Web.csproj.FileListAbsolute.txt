@@ -1,7 +1,8 @@
 C:\Users\Administrator\source\repos\WebHook\TravelAgency\bin\Debug\net6.0\TravelAgency.Web.exe
+C:\Users\Administrator\source\repos\WebHook\TravelAgency\bin\Debug\net6.0\TravelAgency.Web.dll
+C:\Users\Administrator\source\repos\WebHook\TravelAgency\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.UI.dll
 C:\Users\Administrator\source\repos\WebHook\TravelAgency\bin\Debug\net6.0\TravelAgency.Web.deps.json
 C:\Users\Administrator\source\repos\WebHook\TravelAgency\bin\Debug\net6.0\TravelAgency.Web.runtimeconfig.json
-C:\Users\Administrator\source\repos\WebHook\TravelAgency\bin\Debug\net6.0\TravelAgency.Web.dll
 C:\Users\Administrator\source\repos\WebHook\TravelAgency\bin\Debug\net6.0\TravelAgency.Web.pdb
 C:\Users\Administrator\source\repos\WebHook\TravelAgency\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Antiforgery.dll
 C:\Users\Administrator\source\repos\WebHook\TravelAgency\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Authentication.Abstractions.dll
@@ -296,7 +297,6 @@ C:\Users\Administrator\source\repos\WebHook\TravelAgency\bin\Debug\net6.0\Micros
 C:\Users\Administrator\source\repos\WebHook\TravelAgency\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 C:\Users\Administrator\source\repos\WebHook\TravelAgency\bin\Debug\net6.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
 C:\Users\Administrator\source\repos\WebHook\TravelAgency\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
-C:\Users\Administrator\source\repos\WebHook\TravelAgency\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.UI.dll
 C:\Users\Administrator\source\repos\WebHook\TravelAgency\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
 C:\Users\Administrator\source\repos\WebHook\TravelAgency\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.dll
 C:\Users\Administrator\source\repos\WebHook\TravelAgency\bin\Debug\net6.0\Microsoft.AspNetCore.Razor.Language.dll

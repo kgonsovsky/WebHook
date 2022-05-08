@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Concurrent;
 using System.Linq;
+using System.Text.Json;
 using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using TourOperator.Api.Controllers;
 using TourOperator.Db;
 using TourOperator.Model;
 
@@ -66,7 +68,6 @@ public class Processor: BackgroundService
         _queue.Enqueue(payload);
     }
 
-
     private  async void ReQueue(CancellationToken stoppingToken)
     {
         while (!stoppingToken.IsCancellationRequested)
@@ -76,8 +77,36 @@ public class Processor: BackgroundService
             {
                 using var scope = _scopeFactory.CreateScope();
                 var db = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
+                var reservations = db.Reservations.Where(a => a.Handled == false).ToList();
                 var subscriptions = db.WebhookSubscriptions.Where(q => q.IsActive).ToList();
                 var events = db.WebhookEvents.ToList();
+
+                foreach (var reservation in reservations)
+                {
+                    reservation.Handled = true;
+                    db.SaveChanges();
+                    foreach (var subscription in subscriptions)
+                    {
+                        var wEvent = events.FirstOrDefault(q =>
+                            q.Name == WebHookEnum.ReservationCreated.GetDisplayName());
+                        if (wEvent == null)
+                            continue;
+
+                        var payload = new WebhookPayload()
+                        {
+                            WebhookEvent = wEvent,
+                            WebhookEventId = wEvent.Id,
+                            WebhookSubscriptionId = subscription.Id,
+                            WebhookSubscription = subscription,
+                            Data = JsonSerializer.Serialize(reservation, GateWayController.JsonOptions),
+                            Attempt = 0,
+                            Created = DateTime.Now,
+                            Id = Guid.NewGuid(),
+                        };
+                        db.SaveChanges();
+                        db.WebhookPayloads.Add(payload);
+                    }
+                }
 
                 var payloads = db.WebhookPayloads.Where(a => a.Handled == false)
                     .OrderByDescending(a => a.Created).Take(100).ToList()

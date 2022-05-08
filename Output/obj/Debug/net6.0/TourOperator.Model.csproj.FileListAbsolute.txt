@@ -1,5 +1,5 @@
-C:\Users\Administrator\source\repos\WebHook\Output\Debug\net6.0\TourOperator.Model.deps.json
 C:\Users\Administrator\source\repos\WebHook\Output\Debug\net6.0\TourOperator.Model.dll
+C:\Users\Administrator\source\repos\WebHook\Output\Debug\net6.0\TourOperator.Model.deps.json
 C:\Users\Administrator\source\repos\WebHook\Output\Debug\net6.0\TourOperator.Model.pdb
 C:\Users\Administrator\source\repos\WebHook\Output\obj\Debug\net6.0\TourOperator.Model.csproj.AssemblyReference.cache
 C:\Users\Administrator\source\repos\WebHook\Output\obj\Debug\net6.0\TourOperator.Model.GeneratedMSBuildEditorConfig.editorconfig

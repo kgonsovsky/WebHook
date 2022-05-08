@@ -29,6 +29,7 @@ public class GateWayController: ControllerBase
 
         reservation.Handled = true;
         _db.Reservations.Add(reservation);
+        _db.SaveChanges();
 
         foreach (var subscription in subscriptions)
         {
