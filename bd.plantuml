@@ -59,11 +59,11 @@ entity SE as "Subscription-Event" {
 
 
 
-note right of  SE
+note right of  SE::Inverse
     if Inverse = true 
         Include this  
     else
-        Include all of this
+        Exclude this
 end note
 
 
