@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZvqEyYSy0st1GBLJcCxLzYM/AeLZBhOXi70bI5Z8Q1v9GjfTTomfqs46geX0/xceKuUzZnFNNbnMl2Z/GWBWNw==",
+  "dgSpecHash": "1FEkwSLJ195PT12VrfCQaBDFGzfJZgqyQulD6GFscxOfa0anhgulwe9xuuu2VTWICG06drsNDhhVQHutPtFLPw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Administrator\\source\\repos\\WebHook\\TourOperator.Model\\TourOperator.Model.csproj",
+  "projectFilePath": "C:\\Users\\Administrator\\source\\repos\\WebHookX\\TourOperator.Model\\TourOperator.Model.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

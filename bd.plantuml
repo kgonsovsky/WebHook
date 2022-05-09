@@ -1,0 +1,149 @@
+@startuml WebHooks data
+title WebHooks model for generic topics / events
+package "Persistent storage" {
+
+
+
+entity "Subscription" {
+  *id 
+  --
+  DisplayName : text
+  --
+  PayloadUrl : text
+  Secret : text
+  --
+  IsActive: bool
+  Inverse: bool
+}
+
+entity Event as "Event" {
+  *Id
+  --
+  Template: Json
+  --
+  Name : text
+  Displayname : text
+  Description : text
+}
+
+
+note right of Event
+    reservations
+    offers
+    (topic)
+end note
+
+
+
+entity "Action" {
+  *Id
+  --
+  Name : text
+  Displayname : text
+  Description : text
+}
+
+note left of Action
+    insert
+    update
+    delete
+end note
+
+entity SE as "Subscription-Event" {
+  *SubscriptionId: Id
+  *EventId: Id 
+  --
+  IsActive: bool
+  Inverse: bool
+}
+
+
+
+note right of  SE
+    if Inverse = true 
+        Include this  
+    else
+        Include all of this
+end note
+
+
+Subscription::Id }|-- SE::SubscriptionId
+Event::Id }|-- SE::EventId
+
+entity SA as "Subscription-Action" {
+  *SubscriptionId: Id
+  *ActionId: Id
+  --
+  IsActive: bool
+  Inverse: bool
+}
+
+Subscription::Id }|-- SA::SubscriptionId
+Action::Id }|-- SA::ActionId
+
+
+
+entity SEF as "Subcription-Event-Filter" {
+  *id  
+  *SubscriptionId: id  
+  *EventId: id
+  --
+  Template: Json
+  --
+  IsActive: bool
+  Inverse: bool
+}
+
+note right of SEF
+    Json template matching
+end note
+
+SE::SubscriptionId }|-- SEF::SubscriptionId
+SE::EventId }|-- SEF::EventId
+
+
+
+}
+
+package "Dynamic storage" {
+
+
+entity g as "Group" {
+  *id
+  --
+  *EventId : id
+  *Action: Id
+  --
+  HookData: json
+}
+    
+entity "PayLoad" {
+  *id
+  --
+  *GroupId: id  
+  *SubscriptionId : id
+  --
+  Created: timestamp
+  Attempts: integer
+  --
+  Handled: bool
+}
+
+entity "Response" {
+  *id 
+  --
+  *PayLoadId : id
+  --
+  Created: timestamp
+  Data: json
+  StatusCode: int
+}
+
+g::id }|-- PayLoad::GroupId
+Response::PayLoadId |o-- PayLoad::id
+
+
+
+
+}
+
