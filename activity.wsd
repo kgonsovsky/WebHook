@@ -1,0 +1,53 @@
+@startuml
+title WebHooks Microservice activity
+start
+
+while (Cancelation Requested?) is (false)
+
+fork
+    :Sourcing with Kafka();
+
+    if (New event?) then (true)
+        partition #PaleGreen Database {
+            :fetchSubscriptions();
+            while (Next?) is (true)
+            :createPayLoad(event, subscription);
+            endwhile (false)
+        }
+        #pink :break;
+    else (false)
+        #pink :break;
+    endif
+
+
+fork again
+    :Processing PayLoads();
+    if (Peek PayLoad?) then (true)
+        partition #PaleGreen In-Memory {
+
+            repeat :DelevirerPayload()
+
+            split
+                :Thread #1;
+                split again
+                :Thread #N;
+            end split
+
+            backward : Attempts Counter ++;
+            note right: Notify Retrier
+
+            repeat while (Success?) is (false) not (true)
+        }
+    else (false)
+        #pink :break;
+    endif
+
+end fork
+
+endwhile (true)
+
+stop
+
+
+
+@enduml

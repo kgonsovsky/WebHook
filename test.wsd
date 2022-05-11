@@ -1,0 +1,17 @@
+@startuml
+
+    ' define
+        !define NEW_PAGE_1 == newpage ==
+
+        !definelong NEW_PAGE_2(obj)
+            note over obj: newpage
+        !enddefinelong
+
+    ' main
+        Bob -> Alice : hello
+        NEW_PAGE_1
+        Bob -> Mark : Hi
+        NEW_PAGE_2(Bob)
+        Bob -> Carson
+
+@enduml

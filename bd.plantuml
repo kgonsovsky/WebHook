@@ -59,7 +59,7 @@ entity SE as "Subscription-Event" {
 
 
 
-note right of  SE::Inverse
+note left of  SE::Inverse
     if Inverse = true 
         Include this  
     else
@@ -114,20 +114,40 @@ entity g as "Group" {
   *EventId : id
   *Action: Id
   --
-  HookData: json
+  Data: json
 }
+
     
-entity "PayLoad" {
+entity p as "PayLoad" {
   *id
   --
   *GroupId: id  
   *SubscriptionId : id
   --
+  SourceId: id
+  --
   Created: timestamp
   Attempts: integer
   --
-  Handled: bool
+  Delivered: bool
 }
+
+
+
+note left of p::Attempts
+    For retrier to decide 
+end note
+
+
+note right of p::SourceId
+    Linkage to Master Source
+end note
+
+note right of p::Delivered
+    Cleanout this payload
+end note
+
+
 
 entity "Response" {
   *id 
@@ -139,8 +159,8 @@ entity "Response" {
   StatusCode: int
 }
 
-g::id }|-- PayLoad::GroupId
-Response::PayLoadId |o-- PayLoad::id
+g::id }|--  p::GroupId : Group events with same data
+Response::PayLoadId |o-- p::id
 
 
 
