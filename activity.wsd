@@ -1,11 +1,15 @@
 @startuml
+'left to right direction
+
 title WebHooks Microservice activity
+
 start
 
 while (Cancelation Requested?) is (false)
 
+
 fork
-    :Sourcing with Kafka();
+    :Sourcing Events();
 
     if (New event?) then (true)
         partition #PaleGreen Database {
@@ -21,9 +25,9 @@ fork
 
 
 fork again
-    :Processing PayLoads();
-    if (Peek PayLoad?) then (true)
-        partition #PaleGreen In-Memory {
+    :Delivering Payloads();
+    if (Peek Payload?) then (true)
+        partition #PaleGreen Queue {
 
             repeat :DelevirerPayload()
 

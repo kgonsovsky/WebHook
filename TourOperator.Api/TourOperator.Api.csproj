@@ -66,4 +66,8 @@
 	  </None>
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Folder Include="Services\Faker\" />
+	</ItemGroup>
+
 </Project>

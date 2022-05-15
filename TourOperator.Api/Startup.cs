@@ -7,6 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using TourOperator.Api.Controllers;
+using TourOperator.Api.Model;
 using TourOperator.Api.Services;
 using TourOperator.Db;
 
@@ -36,6 +37,9 @@ public class Startup
 
             }
         );
+
+        services.AddOptions<KafkaOpts>("Kafka");
+
         services.AddDatabaseDeveloperPageExceptionFilter();
         services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
             .AddEntityFrameworkStores<ApplicationDbContext>();

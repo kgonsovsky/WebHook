@@ -11,7 +11,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TourOperator.Db", "TourOper
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{5E1126CE-66D6-4FCA-8B19-EA09FD6CB698}"
 	ProjectSection(SolutionItems) = preProject
+		activity.wsd = activity.wsd
+		bd.plantuml = bd.plantuml
 		git.bat = git.bat
+		KafkaWebHook.docx = KafkaWebHook.docx
 		migrate.bat = migrate.bat
 	EndProjectSection
 EndProject

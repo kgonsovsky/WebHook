@@ -19,23 +19,18 @@ entity "Subscription" {
 entity Event as "Event" {
   *Id
   --
-  Template: Json
-  --
   Name : text
   Displayname : text
   Description : text
 }
 
-
 note right of Event
-    reservations
-    offers
-    (topic)
+    Creation
+    Modification
+    Cancelation
 end note
 
-
-
-entity "Action" {
+entity obj as "Object" {
   *Id
   --
   Name : text
@@ -43,10 +38,10 @@ entity "Action" {
   Description : text
 }
 
-note left of Action
-    insert
-    update
-    delete
+note left of obj
+    Reservation
+    Offer
+    Loyalty
 end note
 
 entity SE as "Subscription-Event" {
@@ -58,35 +53,32 @@ entity SE as "Subscription-Event" {
 }
 
 
-
-note left of  SE::Inverse
+note right of  SE::Inverse
     if Inverse = true 
         Include this  
     else
         Exclude this
 end note
 
-
 Subscription::Id }|-- SE::SubscriptionId
 Event::Id }|-- SE::EventId
 
-entity SA as "Subscription-Action" {
+entity SO as "Subscription-Object" {
   *SubscriptionId: Id
-  *ActionId: Id
+  *ObjectId: Id
   --
   IsActive: bool
   Inverse: bool
 }
 
-Subscription::Id }|-- SA::SubscriptionId
-Action::Id }|-- SA::ActionId
+Subscription::Id }|-- SO::SubscriptionId
+obj::Id }|-- SO::ObjectId
 
 
-
-entity SEF as "Subcription-Event-Filter" {
+entity SOF as "Subcription-Object-Filter" {
   *id  
   *SubscriptionId: id  
-  *EventId: id
+  *ObjectId: id
   --
   Template: Json
   --
@@ -94,76 +86,76 @@ entity SEF as "Subcription-Event-Filter" {
   Inverse: bool
 }
 
-note right of SEF
+note right of SOF
     Json template matching
 end note
 
-SE::SubscriptionId }|-- SEF::SubscriptionId
-SE::EventId }|-- SEF::EventId
+SO::SubscriptionId }|-- SOF::SubscriptionId
+SO::ObjectId }|-- SOF::ObjectId
 
 
 
 }
 
-package "Dynamic storage" {
+' package "Delivry Queue" {
 
 
-entity g as "Group" {
-  *id
-  --
-  *EventId : id
-  *Action: Id
-  --
-  Data: json
-}
+' entity g as "Group" {
+'   *id
+'   --
+'   *EventId : id
+'   *Action: Id
+'   --
+'   Data: json
+' }
 
     
-entity p as "PayLoad" {
-  *id
-  --
-  *GroupId: id  
-  *SubscriptionId : id
-  --
-  SourceId: id
-  --
-  Created: timestamp
-  Attempts: integer
-  --
-  Delivered: bool
-}
+' entity p as "PayLoad" {
+'   *id
+'   --
+'   *GroupId: id  
+'   *SubscriptionId : id
+'   --
+'   SourceId: id
+'   --
+'   Created: timestamp
+'   Attempts: integer
+'   --
+'   Delivered: bool
+' }
 
 
 
-note left of p::Attempts
-    For retrier to decide 
-end note
+' note left of p::Attempts
+'     For retrier to decide 
+' end note
 
 
-note right of p::SourceId
-    Linkage to Master Source
-end note
+' note right of p::SourceId
+'     Linkage to Master Source
+' end note
 
-note right of p::Delivered
-    Cleanout this payload
-end note
-
-
-
-entity "Response" {
-  *id 
-  --
-  *PayLoadId : id
-  --
-  Created: timestamp
-  Data: json
-  StatusCode: int
-}
-
-g::id }|--  p::GroupId : Group events with same data
-Response::PayLoadId |o-- p::id
+' note right of p::Delivered
+'     Cleanout this payload
+' end note
 
 
 
+' entity "Response" {
+'   *id 
+'   --
+'   *PayLoadId : id
+'   --
+'   Created: timestamp
+'   Data: json
+'   StatusCode: int
+' }
 
-}
+' g::id }|--  p::GroupId : Group events with same data
+' Response::PayLoadId |o-- p::id
+
+
+
+
+' }
 
